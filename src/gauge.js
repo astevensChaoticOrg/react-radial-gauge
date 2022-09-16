@@ -81,7 +81,7 @@ class Gauge extends Component {
             y2 = opts.cY + (opts.needleWidth / 2),
             x3 = opts.diameter,
             y3 = opts.cY,
-            needleAngle = (opts.useAngle ? opts.currentValue : ((360 * opts.currentValue) / 100);
+            needleAngle = opts.useAngle ? opts.currentValue : ((360 * opts.currentValue) / 100);
 
         let needleElm = null;
         if (opts.needleSharp) {

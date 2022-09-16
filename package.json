@@ -1,6 +1,6 @@
 {
   "name": "react-radial-gauge",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Gauges in React using SVG",
   "main": "dist/gauge.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vraa/react-svg-gauge.git"
+    "url": "https://github.com/astevensChaoticOrg/react-radial-gauge"
   },
   "keywords": [
     "react",
@@ -23,7 +23,7 @@
   "author": "Veera",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vraa/react-svg-gauge/issues"
+    "url": "https://github.com/astevensChaoticOrg/react-radial-gauge"
   },
   "homepage": "https://github.com/vraa/react-svg-gauge#readme",
   "peerDependencies": {
