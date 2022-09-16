@@ -81,7 +81,7 @@ class Gauge extends Component {
             y2 = opts.cY + (opts.needleWidth / 2),
             x3 = opts.diameter,
             y3 = opts.cY,
-            needleAngle = (360 * opts.currentValue) / 100;
+            needleAngle = (opts.useAngle ? opts.currentValue : ((360 * opts.currentValue) / 100);
 
         let needleElm = null;
         if (opts.needleSharp) {
@@ -135,7 +135,7 @@ class Gauge extends Component {
                 textAnchor="middle"
                 fill={opts.progressColor}
             >
-                {opts.currentValue}
+                {opts.textValue == "" ? opts.currentValue : opts.textValue}
             </text>
         )
     };
@@ -199,11 +199,13 @@ Gauge.defaultProps = {
     maximumValue: 100,
     currentValue: 25,
     progressWidth: 5,
+    textValue: "",
     progressColor: '#3d3d3d',
     progressRoundedEdge: true,
     downProgressColor: 'red',
     progressFont: 'Serif',
     progressFontSize: '40',
+    useAngle: 0,
 
     needle: true,
     needleBaseSize: 5,
